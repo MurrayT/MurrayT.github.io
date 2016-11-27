@@ -33,13 +33,13 @@ random person's ramblings on the internets.
 
 Jekyll's markdown can do code
 
-```python3
+{% highlight python %}
 def print_hi(name):
   print("Hi, {}".format(name))
 
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
-```
+{% endhighlight %}
 
 And math (with AMS math)
 
