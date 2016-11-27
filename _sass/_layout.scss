@@ -1,0 +1,25 @@
+.page-content {
+  @include outer-container;
+  min-height: 80vh;
+}
+
+.previous-link{
+  float: left;
+}
+
+.next-link{
+  float: right;
+}
+
+.post-navigation{
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.ninespanner{
+  @include span-columns(9);
+}
+
+.threespanner{
+  @include span-columns(3);
+}

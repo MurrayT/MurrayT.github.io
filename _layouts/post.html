@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="post">
+
+  <article class="type-system-geometric">
+    {% if page.categories %}
+    {% for cat in page.categories | sort%}
+    <p class='type'>{{ cat }}</p>
+    {% endfor %}
+    {% endif%}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<h2 class="post-subtitle"> {{ page.subtitle}}</h2>{% endif %}
+    <p class="post-meta"><p class='date'>{{ page.date | date: "%b %-d, %Y" }}</p>{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+<!--</article>-->
+  <section class="post-content">
+    {{ content }}
+  </section>
+  {% if page.author %} <hr /> <p class='author'> {{ page.author }}</p>{% endif %}
+  <section class="post-navigation">
+  {% if page.previous %}
+  <section class="previous-link">
+    <a href="{{ page.previous.url | prepend: site.baseurl }}"><span class="fa fa-arrow-left" aria-hidden="true"></span> Previous Post </a>
+  </section>
+  {% endif %}
+  {% if page.next %}
+  <section class="next-link">
+    <a href="{{ page.next.url | prepend: site.baseurl }}"> Next Post  <span class="fa fa-arrow-right" aria-hidden="true"></span> </a>
+  </section>
+  {% endif %}
+  </section>
+  </article>
+
+</div>

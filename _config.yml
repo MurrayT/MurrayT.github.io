@@ -1,0 +1,16 @@
+# Site settings
+title: Murray Tannock
+description: > # this means to ignore newlines until "baseurl:"
+  Murray Tannock.
+  PhD candidate.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://MurrayT.github.io" # the base hostname & protocol for your site
+github_username:  MurrayT
+permalink: "/:title/"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: kramdown
+  syntax-highlighter: rouge

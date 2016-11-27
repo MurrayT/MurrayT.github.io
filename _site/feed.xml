@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Murray Tannock</title>
+    <description>Murray Tannock. PhD candidate.
+</description>
+    <link>http://MurrayT.github.io/</link>
+    <atom:link href="http://MurrayT.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 27 Nov 2016 01:44:09 +0000</pubDate>
+    <lastBuildDate>Sun, 27 Nov 2016 01:44:09 +0000</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Welcome to the interwebs!</title>
+        <description>&lt;p&gt;I’ve finally gotten round to setting up my Github Pages site, that I will be using as my main 
+internet place. I hope I can be happier with this than I was the other &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; times I tried to
+do this.&lt;/p&gt;
+
+&lt;p&gt;Let’s get the lowdown on the hoedown then. The site was produced with the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; static site generator (courtesy of GH pages)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;Normalize.css&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bourbon.io&quot;&gt;Neat, Bourbon, Bitters and Refills&lt;/a&gt; for layout and other goodies.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fontawesome.io&quot;&gt;font-awesome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I decided not to use GFM for input and instead use default the kramdown (I think it’s math support is 
+better).&lt;/p&gt;
+
+&lt;p&gt;I’m going to try and record my “musings” fairly regularly, so there may be many
+different unrelated kinds of posts pop up here. Only the newest 8 show up on the home page so in 
+the near future I will have to make an archive for all the past posts (I may even try and do fancy
+things with the categories).&lt;/p&gt;
+
+&lt;p&gt;I tried having a random quote on the front page, but I can’t find an free API that lets me control the
+maximum length of the quote. I also considered having comments, but does anyone even comment on a 
+random person’s ramblings on the internets.&lt;/p&gt;
+
+&lt;p&gt;Jekyll’s markdown can do code&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hi, {}&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And math (with AMS math)&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+
+\begin{aligned}
+    f(x) &amp;= e^{\frac{1}{x}}+x\cos(x)\\
+    f^\prime(x) &amp;= f^\prime(x) = -\frac{e^\frac{1}{x}}{x^2} + \cos x - x \sin x
+\end{aligned}
+ %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;And I even found some Javascript that lets me write music&lt;/p&gt;
+&lt;pre&gt;
+X: 1
+T: The Korgi
+M: C|
+L: 1/8
+K: Hp
+|: AAcA eAcA | GGBG dGBG | AAcA eAcA | BGBd egde :|
+|: AAaA AeAA | GGBG dGBG | AAaA AeAA | BGBd egde :|
+|: AAce aece | GGBd egde | AAce aece | BGBd egde :|
+|: AAaA AeAA | BGBd egde | AAaA AeAA | BGBd egde :|
+&lt;/pre&gt;
+
+</description>
+        <pubDate>Sun, 27 Nov 2016 00:15:00 +0000</pubDate>
+        <link>http://MurrayT.github.io/jekyll/2016/11/27/new-website.html</link>
+        <guid isPermaLink="true">http://MurrayT.github.io/jekyll/2016/11/27/new-website.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>

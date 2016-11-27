@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<div class="hero">
+  {% if site.description %}
+  <div class="hero-content">
+    <article class="type-system-geometric">
+    <p>{{ site.description }}</p>
+    <!--<blockquote id="qod-quote">
+      This is a quote
+    </blockquote>-->
+    </article>
+  </div>
+  {% endif %}
+</div>
+<h1 class="gridtitle"> Posts </h1>
+<p class="subtitle">The ramblings of an {{'"educated"' | smartify}} mind</p>
+  <div class="grid-items-lines">
+  {% for post in site.posts limit:8 %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="grid-item">
+     <article class="type-system-geometric">
+    <h1 class="post-header post-title">{{ post.title }}</h1> <p class='date'>{{ post.date | date: "%b %-d, %Y" }}</p>
+    <p>{{ post.excerpt | truncatewords: 25 }}</p>
+     </article>
+  </a>
+  {% endfor %}
+
+  <div class="right-cover"></div>
+  <div class="bottom-cover"></div>
+</div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
