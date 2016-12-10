@@ -1,7 +1,7 @@
 .hero {
   $large-screen: 50em !default;
   align-items: center;
-  background: linear-gradient(rgba(255,255,255,0.0), #fff), url("../assets/img/IMG_5859.JPG") no-repeat, linear-gradient(rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.7));
+  background: linear-gradient(rgba(255,255,255,0.0), #fff), url("../assets/img/IMG_5859.JPG") no-repeat;
   background-position: 60%;
   background-size: auto 100%;
   display: flex;
@@ -53,5 +53,5 @@
     line-height: 1.5em;
     margin-bottom: 1.5em;
   }
-  
+
 }

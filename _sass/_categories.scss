@@ -18,6 +18,10 @@
     text-transform: uppercase;
     cursor: pointer;
     cursor: hand;
+
+    &:hover{
+      color: grey;
+    }
   }
 
 
