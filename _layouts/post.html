@@ -5,7 +5,8 @@ layout: default
 
   <article class="type-system-geometric">
     {% if page.categories %}
-    {% for cat in page.categories | sort%}
+    {% assign sorted_cats = page.categories | sort %}
+    {% for cat in sorted_cats%}
     <p class='type'>{{ cat }}</p>
     {% endfor %}
     {% endif%}

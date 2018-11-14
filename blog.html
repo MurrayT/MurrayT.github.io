@@ -6,7 +6,8 @@ title: Blog
 <h1 class="gridtitle"> Posts </h1>
 <p class="subtitle">The ramblings of an {{'"educated"' | smartify}} mind</p>
 <div id="filter-list">
-{% for cat in site.categories | sort %}
+{% assign sorted_cats = site.categories | sort %}
+{% for cat in sorted_cats %}
         <div class="filter-item {{cat | first |prepend: 'filter-cat-'}}">
         {{ cat | first }}</div>{% unless forloop.last %}, {% endunless %}
 
@@ -20,7 +21,7 @@ title: Blog
   <a href="{{ post.url | prepend: site.baseurl }}" class="grid-item grid-item-big {% for cat in post.categories %} {{cat |prepend: "cat-"}} {% endfor %}">
      <article class="type-system-geometric">
     <h1 class="post-header post-title">{{ post.title }}</h1> <p class='date'>{{ post.date | date: "%b %-d, %Y" }}</p>
-    <p>{{ post.excerpt | truncatewords: 25 }}</p>
+    <p>{{ post.excerpt | strip_html| truncatewords: 20 }}</p>
      </article>
   </a>
   {% endfor %}

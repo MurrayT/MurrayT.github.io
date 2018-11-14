@@ -25,7 +25,7 @@ layout: default
   <a href="{{ post.url | prepend: site.baseurl }}" class="grid-item {% for cat in post.categories %} {{cat |prepend: "cat-"}} {% endfor %}">
      <article class="type-system-geometric">
     <h1 class="post-header post-title">{{ post.title }}</h1> <p class='date'>{{ post.date | date: "%b %-d, %Y" }}</p>
-    <p>{{ post.excerpt | truncatewords: 25 }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
      </article>
   </a>
   {% endfor %}

@@ -6,6 +6,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://MurrayT.github.io" # the base hostname & protocol for your site
 github_username:  MurrayT
+strava:
+  athlete_number: 2509214
+  username: "Murray Tannock"
 permalink: "/:title/"
 
 # Build settings
